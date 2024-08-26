@@ -264,23 +264,6 @@ body {
 
 }
 
-@media(max-width:768px) {
-    .services .services-content .col .serv {
-        display: flex;
-        margin-bottom: 40px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .services .special-header {
-        font-size: 80px;
-    }
-
-    .services .special-header+p {
-        font-size: 15px;
-    }
-}
-
 .services .services-content .serv .text {
     flex: 1;
 }
@@ -307,16 +290,6 @@ body {
     position: relative;
 }
 
-@media (max-width:1199px) {
-    .services .services-content .col:last-child {
-        display: none;
-    }
-
-    .services .services-content{
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
-}
-
 .services .services-content .imegs::before {
     content: "";
     position: absolute;
@@ -333,17 +306,6 @@ body {
 .portfolio {
     background-color: var(--section-background);
 
-}
-
-@media(max-width:768px) {
-
-    .portfolio .special-header {
-        font-size: 80px;
-    }
-
-    .portfolio .special-header+p {
-        font-size: 15px;
-    }
 }
 
 .portfolio .container .port-content {
@@ -379,16 +341,6 @@ body {
     padding-bottom: var(--section-padding);
 }
 
-@media(max-width:768px) {
-
-    .about .special-header {
-        font-size: 80px;
-    }
-
-    .about .special-header+p {
-        font-size: 15px;
-    }
-}
 
 .about .about-content {
     display: flex;
@@ -396,20 +348,6 @@ body {
     flex-wrap: wrap;
     margin-top: 80px;
 }
-
-@media (max-width:991px) {
-    .about .about-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .about .col p {
-        text-align: center;
-    }
-
-}
-
 
 .about .imeges {
     width: 250px;
@@ -441,18 +379,6 @@ body {
     width: 100px;
     height: calc(100% + 100px);
     z-index: -1;
-}
-
-@media (max-width:991px) {
-
-    .about .imeges::after,
-    .about .imeges::before {
-        display: none;
-    }
-
-    .about .imeges {
-        margin: 0px auto 60px;
-    }
 }
 
 .about .imeges {
@@ -507,16 +433,6 @@ hr {
     padding-bottom: var(--section-padding);
 }
 
-@media (max-width:768px) {
-    .contact .special-header {
-        font-size: 80px;
-    }
-
-    .contact .special-header+p {
-        font-size: 15px;
-    }
-}
-
 .contact .contact-content {
     display: flex;
     justify-content: center;
@@ -536,15 +452,6 @@ hr {
 
 }
 
-@media(max-width:768px) {
-    .contact .contact-content h3 {
-        font-size: 20px;
-        letter-spacing: -1px;
-        margin-bottom: 10px;
-    }
-}
-
-
 .contact .contact-content a {
     font-weight: bold;
     font-size: 35px;
@@ -554,12 +461,6 @@ hr {
 
 }
 
-@media(max-width:768px) {
-    .contact .contact-content a {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-}
 
 .contact .contact-content .social {
     display: flex;
@@ -601,3 +502,90 @@ footer p span {
 }
 
 /* End Footer  */
+
+@media (max-width:1199px) {
+    .services .services-content .col:last-child {
+        display: none;
+    }
+
+    .services .services-content{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+
+@media (max-width:991px) {
+    .about .about-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .about .col p {
+        text-align: center;
+    }
+
+    .about .imeges::after,
+    .about .imeges::before {
+        display: none;
+    }
+
+    .about .imeges {
+        margin: 0px auto 60px;
+    }
+}
+
+@media(max-width:768px) {
+    .services .services-content{
+        display: block;
+    }
+
+    .services .services-content .col .serv {
+        display: flex;
+        margin-bottom: 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services .special-header {
+        font-size: 80px;
+    }
+
+    .services .special-header+p {
+        font-size: 15px;
+    }
+
+    .about .special-header {
+        font-size: 80px;
+    }
+
+    .about .special-header+p {
+        font-size: 15px;
+    }
+
+    .portfolio .special-header {
+        font-size: 80px;
+    }
+
+    .portfolio .special-header+p {
+        font-size: 15px;
+    }
+
+    .contact .special-header {
+        font-size: 80px;
+    }
+
+    .contact .special-header+p {
+        font-size: 15px;
+    }
+
+    .contact .contact-content h3 {
+        font-size: 20px;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+    }
+
+    .contact .contact-content a {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
